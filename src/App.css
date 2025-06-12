@@ -1,0 +1,128 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.todo {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+}
+
+.todo__form-new-list {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+.todo__new-list-input {
+    padding: 12px 15px;
+    background: none;
+    border: 1px solid #9E78CF;
+    border-radius: 10px;
+    flex: 10;
+    color: white;
+}
+
+.todo__new-list-btn {
+    border-radius: 10px;
+    flex: 1;
+    background-color: #9E78CF;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.todo__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.todo__tasks-title,
+.todo__done-title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.todo__tasks-list,
+.todo__done-list {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.todo__tasks-list-item,
+.todo__done-list-item {
+    color: rgb(180, 162, 202);
+    padding: 25px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    background-color: #15101C;
+    border-radius: 15px;
+}
+
+.todo__list-item-text,
+.todo__list-item-text-done {
+    max-width: 400px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.todo__list-item-text-done {
+    max-width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #5d0070;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9E78CF;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9b0ba8;
+}
+
+.todo__tasks-list-item-Check,
+.todo__tasks-list-item-delete-btn {
+    background: none;
+    border: none;
+}
+
+.todo__tasks-list-item-Check {
+    margin: 0px 15px 0px auto;
+}
+
+.todo__tasks-list-item-check-img,
+.todo__tasks-list-item-delete-img {
+    fill: rgb(180, 162, 202);
+    cursor: pointer;
+}
+
+.todo__tasks-list-item-check-img:hover,
+.todo__tasks-list-item-delete-img:hover {
+    fill: rgb(107, 87, 131);
+}
+
+.todo__done-list-item {
+    color: #78CFB0;
+    text-decoration: line-through;
+}
